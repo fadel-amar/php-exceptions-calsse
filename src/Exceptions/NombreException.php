@@ -6,6 +6,4 @@ class NombreException extends \Exception {
 
 
 
-
-
 }
