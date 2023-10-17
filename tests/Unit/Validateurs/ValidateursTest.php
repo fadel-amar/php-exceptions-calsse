@@ -12,7 +12,7 @@ class ValidateursTest extends TestCase {
 
 
     #[test]
-    function verifierNombre_NombrePositif_True () {
+    public function verifierNombre_NombrePositif_True () {
         // Arrange
         $validateur = new Validateur();
         // Act
@@ -22,7 +22,7 @@ class ValidateursTest extends TestCase {
     }
 
     #[test]
-    function verifierNombre_NombreNegatif_NombreException () {
+    public function verifierNombre_NombreNegatif_NombreException () {
         // Arrange
         $validateur = new Validateur();
         // Act
@@ -37,7 +37,7 @@ class ValidateursTest extends TestCase {
 
 
     #[test]
-    function validerMotPasse_NbCractereInferieurA8_MotPasseException () {
+    public function validerMotPasse_NbCractereInferieurA8_MotPasseException () {
         // Arrange
         $validateur = new Validateur();
         // Act
@@ -48,7 +48,7 @@ class ValidateursTest extends TestCase {
     }
 
     #[test]
-    function validerMotPasse_8caracterePasMajuscule_MotPasseException () {
+    public function validerMotPasse_8caracterePasMajuscule_MotPasseException () {
         // Arrange
         $validateur = new Validateur();
         // Act
@@ -59,7 +59,7 @@ class ValidateursTest extends TestCase {
     }
 
     #[test]
-    function validerMotPasse_8caractereMajusculePasMiniscule_MotPasseException () {
+    public function validerMotPasse_8caractereMajusculePasMiniscule_MotPasseException () {
         // Arrange
         $validateur = new Validateur();
         // Act
@@ -70,7 +70,7 @@ class ValidateursTest extends TestCase {
     }
 
     #[test]
-    function validerMotPasse_8caractereMajusculeMinisculePasChiffres_MotPasseException () {
+    public function validerMotPasse_8caractereMajusculeMinisculePasChiffres_MotPasseException () {
         // Arrange
         $validateur = new Validateur();
         // Act
@@ -81,7 +81,7 @@ class ValidateursTest extends TestCase {
     }
 
     #[test]
-    function validerMotPasse_AllConditionsValide_MotPasseException () {
+    public function validerMotPasse_AllConditionsValide_MotPasseException () {
         // Arrange
         $validateur = new Validateur();
         // Act
